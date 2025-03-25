@@ -1,0 +1,92 @@
+$primary-color: #2196F3;
+$border-color: rgb(154, 187, 206);
+$hover-bg: #F1FCFF;
+$text-color: #4A4A4A;
+
+.filters {
+  box-sizing: border-box;
+  width: 232px;
+  height: 252px;
+  border-radius: 5px;
+  background-color: white;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  vertical-align: bottom;
+  color: $text-color;
+  box-shadow: 0px 2px 8px 0px #0000001A;
+
+  &-header {
+    padding: 20px;
+    text-transform: uppercase;
+    font: inherit; // Наследует свойства .filters
+  }
+}
+
+.checkbox {
+  &-list {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0;
+    vertical-align: middle;
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &-field {
+    padding-left: 20px;
+    font-family: 'Open Sans';
+    display: flex;
+    box-sizing: border-box;
+    height: 40px;
+    
+    &:hover {
+      background: $hover-bg;
+    }
+
+    &:has(input:checked) {
+      background: $hover-bg;
+    }
+
+    input {
+      &[type="checkbox"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $border-color;
+        border-radius: 2px;
+        cursor: pointer;
+        position: relative;
+
+        &:checked {
+          border-color: $primary-color;
+
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 4px;
+            height: 8px;
+            border: solid $primary-color;
+            border-width: 0 2px 2px 0;
+            transform: translate(-50%, -50%) rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+body{
+    background-color:#F3F7FA;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    align-self: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+}
+.wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.tickets{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
