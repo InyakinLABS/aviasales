@@ -62,7 +62,7 @@ export const fetchTickets = (searchId,attemptss=0) => async (dispatch) => {
   dispatch(setLoading(true));
   let attempts = attemptss;
   const MAX_ATTEMPTS = 5;
-  const RETRY_DELAY = 1000;// Задержка между запросами
+  const RETRY_DELAY = 60000;// Задержка между запросами
 
   const fetchData = async () => {
     try {
