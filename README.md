@@ -1,1 +1,2 @@
-v1.0 Добавлена логика работы с чекбоксами
+
+https://aviasales-eosin-omega.vercel.app/
