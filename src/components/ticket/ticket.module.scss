@@ -1,65 +1,63 @@
-.ticket{
-    width: 502px;
-    height: 184px;
-    box-sizing: border-box;
-    padding: 20px;
-    font-family: 'Open Sans';
-font-weight: 600;
-font-size: 24px;
-line-height: 24px;
-letter-spacing: 0px;
-vertical-align: middle;
-background-color: white;
-border-radius: 5px;
-box-shadow: 0px 2px 8px 0px #0000001A;
-
-
+.ticket {
+  width: 502px;
+  height: 184px;
+  box-sizing: border-box;
+  padding: 20px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px 0px #0000001a;
 }
-.ticket-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.ticket-price{
-    color: #2196F3;
+.ticket-price {
+  color: #2196f3;
 }
-.ticket-content{
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+.ticket-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
-.from{
-    width: 462px;
-    height: 39px;
+.from {
+  width: 462px;
+  height: 39px;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.from-content{
-    height: 39px;
-    width: 141px;
+.from-content {
+  height: 39px;
+  width: 141px;
 
-    display: flex;
-    flex-direction: column;
-    font-family: Open Sans;
-font-weight: 600;
-font-size: 12px;
-line-height: 18px;
-letter-spacing: 0.5px;
-vertical-align: middle;
-text-transform: uppercase;
-color:#A0B0B9;
+  display: flex;
+  flex-direction: column;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #a0b0b9;
 }
-.time{
-    font-family: Open Sans;
-font-weight: 600;
-font-size: 14px;
-line-height: 21px;
-letter-spacing: 0px;
-vertical-align: middle;
-color:#4A4A4A;
-text-transform: none;
+.time {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: #4a4a4a;
+  text-transform: none;
 }

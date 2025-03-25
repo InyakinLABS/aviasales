@@ -1,7 +1,7 @@
-$primary-color: #2196F3;
+$primary-color: #2196f3;
 $border-color: rgb(154, 187, 206);
-$hover-bg: #F1FCFF;
-$text-color: #4A4A4A;
+$hover-bg: #f1fcff;
+$text-color: #4a4a4a;
 
 .filters {
   box-sizing: border-box;
@@ -16,7 +16,7 @@ $text-color: #4A4A4A;
   letter-spacing: 0.5px;
   vertical-align: bottom;
   color: $text-color;
-  box-shadow: 0px 2px 8px 0px #0000001A;
+  box-shadow: 0px 2px 8px 0px #0000001a;
 
   &-header {
     padding: 20px;
@@ -49,7 +49,7 @@ $text-color: #4A4A4A;
     display: flex;
     box-sizing: border-box;
     height: 40px;
-    
+
     &:hover {
       background: $hover-bg;
     }
@@ -59,7 +59,7 @@ $text-color: #4A4A4A;
     }
 
     input {
-      &[type="checkbox"] {
+      &[type='checkbox'] {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -74,7 +74,7 @@ $text-color: #4A4A4A;
           border-color: $primary-color;
 
           &::after {
-            content: "";
+            content: '';
             display: block;
             position: absolute;
             top: 50%;

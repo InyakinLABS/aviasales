@@ -1,18 +1,18 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  sortBy: ''
-};
+  sortBy: '',
+}
 
 const sortSlice = createSlice({
   name: 'sort',
   initialState,
   reducers: {
     setSort(state, action) {
-      state.sortBy = action.payload;
-    }
-  }
-});
+      state.sortBy = action.payload
+    },
+  },
+})
 
-export const { setSort } = sortSlice.actions;
-export default sortSlice.reducer;
+export const { setSort } = sortSlice.actions
+export default sortSlice.reducer

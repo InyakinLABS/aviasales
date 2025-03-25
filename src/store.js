@@ -1,12 +1,13 @@
-import { configureStore } from '@reduxjs/toolkit';
-import filtersReducer from './components/filters/filtersSlice';
-import sortReducer from './components/ticketsButtons/ticketsSortSlice';
+import { configureStore } from '@reduxjs/toolkit'
+
+import filtersReducer from './components/filters/filtersSlice'
+import sortReducer from './components/ticketsButtons/ticketsSortSlice'
 import ticketsReducer from './components/ticket/ticketSlice'
 export const store = configureStore({
   reducer: {
     filters: filtersReducer,
     sort: sortReducer,
-    tickets:ticketsReducer,
+    tickets: ticketsReducer,
   },
   devTools: {
     // Настройки DevTools (опционально)
@@ -22,16 +23,16 @@ export const store = configureStore({
       jump: true, // Переход по действиям
       skip: true, // Пропуск действий
       reorder: true, // Изменение порядка редьюсеров
-    }
+    },
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: ['tickets/addTickets'], // Игнорируем проверку для этих экшенов
         ignoredPaths: ['tickets.tickets'], // Игнорируем проверку для этого пути в состоянии
-        warnAfter: 100 // Увеличиваем лимит для предупреждений
-      }
-    })
-});
+        warnAfter: 100, // Увеличиваем лимит для предупреждений
+      },
+    }),
+})
 
-export default store;
+export default store
